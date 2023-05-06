@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+:Agente: as A
+(Evaluar \n Solicitud de Crédito) as ESC
+(Solicitar Información adicional al cliente) as SIA
+
+A --> ESC
+ESC <.. SIA : <<extend>> Si ingresos < 1000
+@enduml
